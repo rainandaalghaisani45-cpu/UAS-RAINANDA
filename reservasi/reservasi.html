@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Reservasi - Smart Fit Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservasi.css">
+</head>
+
+<body>
+
+<h1>Form Reservasi Smart Fit Hub</h1>
+
+<form action="#" method="post">
+
+    <!-- Nama Lengkap -->
+    <label for="nama">Nama Lengkap</label><br>
+    <input type="text" id="nama" name="nama" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- No HP -->
+    <label for="hp">No. HP</label><br>
+    <input type="tel" id="hp" name="hp" required><br><br>
+
+    <!-- Tanggal Reservasi -->
+    <label for="tanggal">Tanggal Reservasi</label><br>
+    <input type="date" id="tanggal" name="tanggal"><br><br>
+
+    <!-- Jam -->
+    <label for="jam">Jam Reservasi</label><br>
+    <select id="jam" name="jam">
+        <option value="">-- Pilih Jam --</option>
+        <option value="07:00">07:00</option>
+        <option value="09:00">09:00</option>
+        <option value="11:00">11:00</option>
+        <option value="15:00">15:00</option>
+        <option value="17:00">17:00</option>
+        <option value="19:00">19:00</option>
+    </select><br><br>
+
+    <!-- Jenis Program -->
+    <label for="program">Jenis Program</label><br>
+    <select id="program" name="program">
+        <option value="">-- Pilih Program --</option>
+        <option value="yoga">Yoga</option>
+        <option value="hiit">HIIT</option>
+        <option value="personal-training">Personal Training</option>
+        <option value="strength-training">Strength Training</option>
+    </select><br><br>
+
+    <!-- Cabang -->
+    <label>Pilih Cabang</label><br>
+    <input type="radio" id="jakarta" name="cabang" value="Jakarta">
+    <label for="jakarta">Jakarta</label><br>
+
+    <input type="radio" id="bandung" name="cabang" value="Bandung">
+    <label for="bandung">Bandung</label><br><br>
+
+    <!-- Catatan -->
+    <label for="catatan">Catatan Khusus</label><br>
+    <textarea id="catatan" name="catatan" rows="4" cols="40"></textarea><br><br>
+
+    <!-- Checkbox Konfirmasi -->
+    <input type="checkbox" id="konfirmasi" name="konfirmasi" required>
+    <label for="konfirmasi">
+        Saya menyatakan data yang saya isi sudah benar
+    </label><br><br>
+
+    <!-- Submit -->
+    <button type="submit">Kirim Reservasi</button>
+<h2></h2>
+</form>
+
+</body>
+</html>

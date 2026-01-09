@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),
+                url("gym-hero.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+/* FORM CONTAINER */
+form {
+    background: rgba(15, 15, 15, 0.95);
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 35px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(244, 67, 54, 0.3);
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #f44336;
+}
+
+/* LABEL */
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* INPUT & SELECT */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #111;
+    color: #fff;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* FOCUS EFFECT */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #f44336;
+    box-shadow: 0 0 5px rgba(244, 67, 54, 0.7);
+}
+
+/* RADIO & CHECKBOX */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.radio-group,
+.checkbox-group {
+    margin-bottom: 20px;
+}
+
+/* SUBMIT BUTTON */
+button {
+    width: 100%;
+    padding: 14px;
+    background: #f44336;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #ff6659;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(244, 67, 54, 0.5);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    form {
+        margin: 20px;
+        padding: 25px;
+    }
+}
